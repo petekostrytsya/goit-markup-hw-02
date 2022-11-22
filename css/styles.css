@@ -1,5 +1,98 @@
 
 /* цвет основного текста h1 #FFFFFF  */
-/* цвет второстепенного текста h2 #2E2F42 */
+/* цвет второстепенного текста h2 & h3 #2E2F42 */
+/* абзац #434455 */
 
+/* body {
+    background-color: #FFFFFF;
+    color: #434455;
+} */
 
+ul {
+    list-style: none;
+}
+
+.logo-studio,
+.logo-web,
+.nav-link,
+.contacts {
+    text-decoration: none;
+}
+.logo-web {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
+}
+
+.logo-studio {
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #2E2F42;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: #434455;
+}
+.nav-link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2E2F42;
+
+}
+
+.contacts:hover,
+.contacts:focus {
+    color: #434455;
+}
+.contacts {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.hero {
+    background-color: #434455;
+}
+.hero-title {
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.button:hover,
+.button:focus {
+    color: #4D5AE5;
+}
+.button {
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+.title {
+    color: #2E2F42;
+}
+
+.text {
+    color: #434455;
+}
