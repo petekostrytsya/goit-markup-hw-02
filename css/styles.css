@@ -1,12 +1,22 @@
+:root {
+    --primary-font: 'Roboto', sans-serif;
+    --secondary-font: 'Raleway', sans-serif;
+    --primaty-text-color: #2E2F42;
+    --secondary-text-color: #434455;
+    --accent-color: #2E2F42;
+}
 
+
+/* ====================COMPONENTS==================== */
 /* цвет основного текста h1 #FFFFFF  */
 /* цвет второстепенного текста h2 & h3 #2E2F42 */
 /* абзац #434455 */
 
-/* body {
+body {
+    font-family: var(--primary-font);
     background-color: #FFFFFF;
     color: #434455;
-} */
+}
 
 ul {
     list-style: none;
@@ -18,7 +28,22 @@ ul {
 .contacts {
     text-decoration: none;
 }
+
+
+.text {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* ====================/COMPONENTS==================== */
+
+/* ====================HEADER==================== */
 .logo-web {
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -30,6 +55,7 @@ ul {
 }
 
 .logo-studio {
+    font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
@@ -37,7 +63,7 @@ ul {
     align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: #2E2F42;
+    color: var(--accent-color);
 }
 
 .nav-link:hover,
@@ -45,13 +71,11 @@ ul {
     color: #434455;
 }
 .nav-link {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #2E2F42;
+    color: var(--accent-color);
 
 }
 
@@ -64,16 +88,41 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--accent-color);
 }
 
+/* =====================/HEADER==================== */
+
+/* =====================ABOUT==================== */
+.title-section {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--accent-color);
+}
+
+.title-description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+/* =====================/ABOUT==================== */
+
+/* =====================HERO====================== */
 .hero {
     background-color: #434455;
 }
 .hero-title {
     font-weight: 600;
     font-size: 56px;
-    line-height: 60px;
+    line-height: 1.07;
     text-align: center;
     letter-spacing: 0.02em;
     color: #FFFFFF;
@@ -81,18 +130,59 @@ ul {
 
 .button:hover,
 .button:focus {
-    color: #4D5AE5;
-}
-.button {
     color: #FFFFFF;
     background-color: #4D5AE5;
     border-color: #4D5AE5;
 }
+.button {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.19;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+    cursor: pointer;
+}
+/* ======================/HERO====================== */
 
-.title {
-    color: #2E2F42;
+/* ======================FOOTER===================== */
+.footer {
+    background-color: #434455;
 }
 
-.text {
-    color: #434455;
+.logo-web {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4D5AE5;
 }
+
+.logo-studio {
+    font-family: var(--secondary-font);
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.33;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--accent-color);
+}
+
+.text-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #E7E9FC;
+}
+/* ======================FOOTER===================== */
