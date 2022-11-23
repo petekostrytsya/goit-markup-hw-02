@@ -25,7 +25,8 @@ ul {
 .logo-studio,
 .logo-web,
 .nav-link,
-.contacts {
+.contacts,
+.link-works {
     text-decoration: none;
 }
 
@@ -93,28 +94,6 @@ ul {
 
 /* =====================/HEADER==================== */
 
-/* =====================ABOUT==================== */
-.title-section {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-    color: var(--accent-color);
-}
-
-.title-description {
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    letter-spacing: 0.02em;
-    color: var(--accent-color);
-}
-/* =====================/ABOUT==================== */
-
 /* =====================HERO====================== */
 .hero {
     background-color: #434455;
@@ -128,13 +107,13 @@ ul {
     color: #FFFFFF;
 }
 
-.button:hover,
-.button:focus {
+.hero-button:hover,
+.hero-button:focus {
     color: #FFFFFF;
     background-color: #4D5AE5;
     border-color: #4D5AE5;
 }
-.button {
+.hero-button {
     font-weight: 600;
     font-size: 16px;
     line-height: 1.19;
@@ -147,6 +126,26 @@ ul {
     cursor: pointer;
 }
 /* ======================/HERO====================== */
+
+/* =====================ABOUT==================== */
+.title-section {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--accent-color);
+}
+
+.title-description {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+}
+/* =====================/ABOUT==================== */
 
 /* ======================FOOTER===================== */
 .footer {
@@ -186,3 +185,29 @@ ul {
     color: #E7E9FC;
 }
 /* ======================FOOTER===================== */
+
+/* ======================MAIN PORTFOLIO===================== */
+
+.menu-button:hover,
+.menu-button:focus {
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    border-color: #4D5AE5;
+}
+
+.menu-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 16px;
+    width: 126px;
+    height: 48px;
+    /* background: #F4F4FD;
+    border: 1px solid #E7E9FC;
+    border-radius: 4px; */
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    cursor: pointer;
+}
