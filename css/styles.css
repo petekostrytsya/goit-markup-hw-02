@@ -4,6 +4,7 @@
     --primaty-text-color: #2E2F42;
     --secondary-text-color: #434455;
     --accent-color: #2E2F42;
+    --secondary-footer-color: #E7E9FC;
 }
 
 
@@ -22,7 +23,8 @@ ul {
     list-style: none;
 }
 
-.logo-studio,
+.logo-studio-dark,
+.logo-studio-white,
 .logo-web,
 .nav-link,
 .contacts,
@@ -33,35 +35,23 @@ ul {
 
 .text {
     font-family: var(--primary-font);
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
+    color: var(--secondary-text-color);
 }
 /* ====================/COMPONENTS==================== */
 
 /* ====================HEADER==================== */
 .logo-web {
-    font-family: var(--secondary-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #4D5AE5;
 }
 
-.logo-studio {
+.logo-studio-dark {
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--accent-color);
@@ -69,7 +59,7 @@ ul {
 
 .nav-link:hover,
 .nav-link:focus {
-    color: #434455;
+    color: #4D5AE5;
 }
 .nav-link {
     font-weight: 600;
@@ -82,10 +72,9 @@ ul {
 
 .contacts:hover,
 .contacts:focus {
-    color: #434455;
+    color: #4D5AE5;
 }
 .contacts {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -96,10 +85,10 @@ ul {
 
 /* =====================HERO====================== */
 .hero {
-    background-color: #434455;
+    background-color: var(--accent-color);
 }
 .hero-title {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
@@ -114,11 +103,9 @@ ul {
     border-color: #4D5AE5;
 }
 .hero-button {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.19;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
     background-color: #4D5AE5;
@@ -128,10 +115,24 @@ ul {
 /* ======================/HERO====================== */
 
 /* =====================ABOUT==================== */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 .title-section {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 36px;
-    line-height: 40px;
+    line-height: 1.11;
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
@@ -139,9 +140,9 @@ ul {
 }
 
 .title-description {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 20px;
-    line-height: 24px;
+    line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--accent-color);
 }
@@ -149,40 +150,28 @@ ul {
 
 /* ======================FOOTER===================== */
 .footer {
-    background-color: #434455;
+    background-color: var(--accent-color);
 }
 
 .logo-web {
-    font-family: var(--secondary-font);
-    font-weight: 800;
-    font-size: 18px;
-    line-height: 1.33;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
     color: #4D5AE5;
 }
 
-.logo-studio {
+.logo-studio-white {
     font-family: var(--secondary-font);
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
-    display: flex;
-    align-items: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--accent-color);
+    color: #F4F4FD;
 }
 
 .text-footer {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #E7E9FC;
+    color: var(--secondary-footer-color);
 }
 /* ======================FOOTER===================== */
 
@@ -196,18 +185,11 @@ ul {
 }
 
 .menu-button {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
     padding: 8px 16px;
-    width: 126px;
-    height: 48px;
-    /* background: #F4F4FD;
-    border: 1px solid #E7E9FC;
-    border-radius: 4px; */
-    flex: none;
-    order: 4;
-    flex-grow: 0;
+    background-color: #E7E9FC;
+    color: #4D5AE5;
     cursor: pointer;
 }
